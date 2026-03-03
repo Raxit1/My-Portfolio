@@ -248,7 +248,7 @@ function Home() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/gp-raj-ict-raxit-chandegra-ict236200332006?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 className="text-[#3B82F6] hover:scale-110 transition"
               >
