@@ -58,7 +58,7 @@ const projects = [
     title: "Rax-Shop",
     desc: "Full-stack e-commerce app with authentication and cart system.",
     image: "/rax-shop.png",
-    liveLink: "#",
+    liveLink: "https://rax-shop.onrender.com",
     codeLink: "https://github.com/Raxit1/rax-shop",
   },
   {
@@ -416,7 +416,9 @@ function Home() {
               </p>
 
               <a
-                href="mailto:raxitchandegra58@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=raxitchandegra58@gmail.com&su=Hello%20Raxit&body=I%20wanted%20to%20connect%20with%20you"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] text-white rounded-full shadow-lg hover:scale-110 transition duration-300"
               >
                 Send Email
