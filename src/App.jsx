@@ -68,7 +68,7 @@ const projects = [
     desc: "Flight reservation system with booking management.",
     image: "/flight.jpeg",
     liveLink: "#",
-    codeLink: "https://github.com/Raxit1/airline-booking",
+    codeLink: "https://github.com/Raxit1/Airliance-booking",
   },
   {
     id: "student-prediction-ai",
@@ -77,7 +77,7 @@ const projects = [
     desc: "Machine learning model predicting academic performance.",
     image: "/student.png",
     liveLink: "#",
-    codeLink: "https://github.com/Raxit1/student-prediction-ai",
+    codeLink: "https://github.com/Raxit1/student-predict-with-ai",
   },
   {
     id: "salary-prediction",
@@ -86,7 +86,7 @@ const projects = [
     desc: "Regression ML model to estimate salary.",
     image: "/student.png",
     liveLink: "#",
-    codeLink: "https://github.com/Raxit1/salary-prediction",
+    codeLink: "https://github.com/Raxit1/prediction-salary",
   },
   {
     id: "home-automation",
