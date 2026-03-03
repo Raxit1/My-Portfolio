@@ -26,6 +26,7 @@ import {
   FaPython,
   FaDatabase,
 } from "react-icons/fa";
+
 // Skills
 const skills = [
   { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-3xl mb-2" /> },
@@ -66,7 +67,6 @@ const projects = [
     title: "Airline Booking",
     desc: "Flight reservation system with booking management.",
     image: "/flight.jpeg",
-
     liveLink: "#",
     codeLink: "https://github.com/Raxit1/airline-booking",
   },
@@ -111,6 +111,8 @@ function Home() {
           <h1 className="text-xl font-bold tracking-wide">
             <span className="text-[#3B82F6]">Raxit</span> Chandegra
           </h1>
+
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8 font-medium">
             <a href="#about" className="hover:text-[#60A5FA] transition">
               About
@@ -132,6 +134,8 @@ function Home() {
               Resume
             </a>
           </div>
+
+          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-2xl"
             onClick={() => setIsOpen(!isOpen)}
@@ -139,10 +143,52 @@ function Home() {
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden absolute top-16 left-0 w-full bg-[#0F172A] border-t border-[#1E293B] flex flex-col items-center py-6 space-y-6 text-lg font-medium">
+            <a
+              href="#about"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#60A5FA] transition"
+            >
+              About
+            </a>
+            <a
+              href="#skills"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#60A5FA] transition"
+            >
+              Skills
+            </a>
+            <a
+              href="#projects"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#60A5FA] transition"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-[#60A5FA] transition"
+            >
+              Contact
+            </a>
+            <a
+              href="/resume.pdf"
+              download
+              className="px-4 py-2 bg-gradient-to-r from-[#3B82F6] to-[#60A5FA] text-white rounded-full text-sm"
+            >
+              Resume
+            </a>
+          </div>
+        )}
       </nav>
 
       {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center px-6 pt-24 overflow-hidden">
+        {/* Animated blobs */}
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }}
           transition={{ duration: 12, repeat: Infinity }}
