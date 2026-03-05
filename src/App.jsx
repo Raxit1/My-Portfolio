@@ -84,7 +84,7 @@ const projects = [
     icon: <FaRobot />,
     title: "Salary Prediction",
     desc: "Regression ML model to estimate salary.",
-    image: "/student.png",
+    image: "/salary.png",
     liveLink: "#",
     codeLink: "https://github.com/Raxit1/prediction-salary",
   },
