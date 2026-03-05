@@ -104,7 +104,7 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-br from-[#0F172A] via-[#1E3A8A] to-[#1E40AF] text-gray-200 font-sans scroll-smooth">
+    <div className="bg-gradient-to-br from-[#0F172A] via-[#1E3A8A] to-[#1E40AF] text-gray-200 font-sans scroll-smooth overflow-x-hidden">
       {/* NAVBAR */}
       <nav className="fixed w-full backdrop-blur-md bg-[#0F172A]/80 shadow-sm z-50 border-b border-[#1E293B]">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
@@ -187,7 +187,7 @@ function Home() {
       </nav>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 pt-24 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center px-6 pt-24 overflow-hidden max-w-full">
         {/* Animated blobs */}
         <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 10, -10, 0] }}
@@ -205,7 +205,7 @@ function Home() {
           className="absolute top-1/2 left-1/3 w-60 h-60 bg-[#2563EB] rounded-full blur-3xl opacity-15"
         />
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center z-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center z-10 px-4">
           <motion.div
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
@@ -272,7 +272,7 @@ function Home() {
             <motion.img
               src="/profile.jpeg"
               alt="Raxit"
-              className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-2xl shadow-2xl border border-[#3B82F6]/40"
+              className="w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 object-cover rounded-2xl shadow-2xl border border-[#3B82F6]/40"
               whileHover={{ scale: 1.05, rotate: 2 }}
               transition={{ duration: 0.5 }}
             />
@@ -295,7 +295,7 @@ function Home() {
         id="skills"
         className="py-10 px-6 text-center bg-[#122552] overflow-hidden"
       >
-        <h3 className="text-3xl font-bold mb-10 text-[#1E3A8A]">
+        <h3 className="text-3xl font-bold mb-10 text-[#60A5FA]">
           Technical Skills
         </h3>
 
@@ -327,7 +327,7 @@ function Home() {
         <h3 className="text-3xl font-bold mb-10 text-[#60A5FA]">
           Featured Projects
         </h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
             <Link
               key={project.id}
@@ -358,7 +358,7 @@ function Home() {
             Have a project idea or want to collaborate? Feel free to reach out.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Contact Info Card */}
             <div className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-xl border border-white/20 text-left space-y-6 hover:scale-105 transition duration-300">
               <div className="flex items-center gap-4">
