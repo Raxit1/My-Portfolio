@@ -221,8 +221,8 @@ function Home() {
               Frontend Developer • React • Python • AI
             </h2>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              👋 I build interactive & intelligent web apps. 🚀 Passionate about
-              AI, Full-stack & Automation.
+              I build interactive & intelligent web apps. Passionate about AI,
+              Full-stack & Automation.
             </p>
             <div className="flex gap-4 mb-4">
               <a
@@ -281,15 +281,55 @@ function Home() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-20 px-6 text-center bg-[#1E3A8A]">
-        <h3 className="text-3xl font-bold mb-6 text-[#60A5FA]">About Me</h3>
-        <p className="max-w-3xl mx-auto text-gray-200">
-          Diploma ICT student from Government Polytechnic Rajkot (7.7 SPI).
-          Skilled in HTML, CSS, JavaScript, React, and Python. Passionate about
-          AI, automation & full-stack development.
-        </p>
-      </section>
+      <section id="about" className="py-24 bg-[#1E3A8A] px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-[#60A5FA] mb-8">About Me</h2>
 
+          <p className="text-gray-200 text-lg leading-relaxed mb-12">
+            Hello! I'm{" "}
+            <span className="text-white font-semibold">Raxit Chandegra</span>, a
+            passionate Diploma ICT student from Government Polytechnic Rajkot. I
+            enjoy building modern web applications and learning new technologies
+            that solve real-world problems.
+          </p>
+
+          <p className="text-gray-300 max-w-3xl mx-auto mb-16">
+            My focus is on developing responsive and user-friendly interfaces
+            using modern technologies. I continuously improve my programming
+            skills by building practical projects and exploring areas like
+            Artificial Intelligence, automation, and full-stack development.
+          </p>
+
+          {/* Highlights */}
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-[#1e40af] p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+              <h3 className="text-2xl font-bold text-white mb-3">
+                Development
+              </h3>
+              <p className="text-gray-300">
+                Building responsive and interactive web applications using
+                modern frontend technologies.
+              </p>
+            </div>
+
+            <div className="bg-[#1e40af] p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+              <h3 className="text-2xl font-bold text-white mb-3">Projects</h3>
+              <p className="text-gray-300">
+                Creating real-world projects including AI tools, web apps, and
+                automation systems.
+              </p>
+            </div>
+
+            <div className="bg-[#1e40af] p-8 rounded-xl shadow-lg hover:scale-105 transition duration-300">
+              <h3 className="text-2xl font-bold text-white mb-3">Learning</h3>
+              <p className="text-gray-300">
+                Continuously exploring Artificial Intelligence, automation, and
+                full-stack development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* SKILLS */}
       <section
         id="skills"
@@ -352,7 +392,7 @@ function Home() {
       >
         <div className="max-w-5xl mx-auto text-center">
           <h3 className="text-4xl font-bold mb-4 text-[#60A5FA]">
-            Let's Work Together 🚀
+            Let's Work Together
           </h3>
           <p className="text-gray-300 mb-12">
             Have a project idea or want to collaborate? Feel free to reach out.
